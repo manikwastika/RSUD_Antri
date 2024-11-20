@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bree+Serif&family=Concert+One&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Oleo+Script:wght@700&family=Patua+One&family=Poppins:wght@800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap");
 
 body {
@@ -25,23 +26,43 @@ ul {
   display: flex;
   list-style: none;
   margin-right: 45px;
-  margin-top: 40px;
+  margin-top: 33px;
   float: left;
 }
 
 ul li {
-  margin: 0 25px;
+  margin: 0 10px;
+}
+
+.active {
+  color: white;
 }
 
 ul li a {
   text-decoration: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 90px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 35px;
+}
+
+ul li a:hover {
+  background-color: red;
+  display: inline-block;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+  transition: all 0.5s;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 .wellcome-container {
-  width: 500px;
-  height: 400px;
-  /* background-color: white; */
+  width: 100%;
+  height: 79vh;
   text-align: center;
   margin: auto;
   padding-top: 130px;
@@ -131,4 +152,93 @@ ul li a {
   60% {
     transform: translateY(-15px);
   }
+}
+
+.container-tentang {
+  width: 100%;
+  height: 100vh;
+  background-color: #4ac2ae;
+}
+
+.title-tentang h1 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-family: "Patua One", serif;
+  color: white;
+  font-size: 35px;
+}
+
+.container-konten-tentang {
+  width: 1500px;
+  height: 650px;
+  background-color: goldenrod;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.tombol-tentang {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.tombol-tentang button {
+  width: 180px;
+  height: 55px;
+  border-radius: 18px;
+  border: none;
+  background-color: #0098c2;
+  color: white;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.tombol-tentang button:hover {
+  background-color: #54dd2b;
+  transition: all 0.5s;
+}
+
+.container-konten-tentang {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card-1 {
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  border-radius: 20px;
+  margin: auto;
+  box-shadow: 4px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card-1 p {
+  padding-left: 25px;
+  font-family: arial;
+}
+
+.pernyataann-tentang {
+  opacity: 0.7;
+}
+
+.deskripsi {
+  width: 300px;
+}
+
+.judul-tentang h3 {
+  font-size: 23px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding-left: 25px;
+}
+
+.gambar-card1 img {
+  width: 100%;
+  height: 220px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
